@@ -8,12 +8,16 @@ const dashboardRoutes = require("./routes/dashboard");
 
 const app = express();
 
-app.use(cors());
+
+const corsOptions = {
+  origin: 'https://gaunetra-ai.onrender.com' 
+};
+app.use(cors(corsOptions));
+
+
 app.use(express.json());
 
-
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
-
 
 app.use("/api/predict", predictRoutes);
 app.use("/api/dashboard", dashboardRoutes);
