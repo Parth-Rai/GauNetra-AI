@@ -51,9 +51,9 @@ This project is the web-based portal, featuring a live demo of the AI model and 
 
 | Cover Page                                       | Main Page                                 |
 | ------------------------------------------------ | ----------------------------------------- |
-| ![Cover Page](<INSERT_SCREENSHOT_URL_HERE>)      | ![Main Page](<INSERT_SCREENSHOT_URL_HERE>)      |
-| **Live Demo & Dashboard** |                                           |
-| ![Live Demo & Dashboard](<INSERT_SCREENSHOT_URL_HERE>) |                                           |
+| ![Cover Page](<./frontend/public/images/SS-CoverPg.png>)      | ![Main Page](<./frontend/public/images/SS-HomePage.png>)      |
+| **Live Demo & Dashboard** |                                           | 
+| ![Live Demo](<./frontend/public/images/SS-LiveDemo.png>) | ![Dashboard](<./frontend/public/images/SS-DashBoard1.png>)                                         |
 
 
 -----
