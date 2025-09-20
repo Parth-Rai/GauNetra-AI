@@ -50,9 +50,10 @@ router.post("/", upload.single("image"), (req, res) => {
       const longitude = 77.2090; 
 
       const dbQuery = `
-        INSERT INTO predictions (image_path, breed, confidence, latitude, longitude, created_at) 
-        VALUES ($1, $2, $3, $4, $5, NOW())
-      `;
+  INSERT INTO gaunetra_schema.predictions (image_path, breed, confidence, latitude, longitude, created_at) 
+  VALUES ($1, $2, $3, $4, $5, NOW())
+`;
+await db.query(dbQuery, [imagePath, breed, confidence, latitude, longitude]);
       
       await db.query(dbQuery, [imagePath, breed, confidence, latitude, longitude]);
       console.log('Prediction saved successfully to the database.');
