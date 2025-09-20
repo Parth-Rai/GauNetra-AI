@@ -7,11 +7,6 @@ const pool = new Pool({
   }
 });
 
-
-pool.on('connect', (client) => {
-  client.query('SET search_path TO gaunetra_schema, public');
-});
-
 module.exports = {
   query: (text, params) => pool.query(text, params),
 };
