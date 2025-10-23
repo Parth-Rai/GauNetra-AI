@@ -72,7 +72,7 @@ Follow these steps to run the project locally.
 ### 1\. Clone the Repository
 
 ```bash
-git clone https://github.com/parthsharmaa/GauNetra-AI.git
+git clone https://github.com/Parth-Rai/GauNetra-AI.git
 cd GauNetra-AI
 ```
 
